@@ -1,0 +1,135 @@
+.descBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+    margin: 50px auto;
+    min-height: 300px;
+    padding: 50px;
+
+}
+.leftBlockDesc {
+    width: 50%;
+    margin: 0 auto;
+}
+.leftBlockDescTitle {
+    font-size: 25px;
+    margin: 15px 0;
+    span {
+        font-size: 2.4rem;
+        padding: 0 12px;
+        background-color: #df372b;
+        color: #fff;
+        border-radius: 2px;
+    }
+}
+.leftBlockDescContent {
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 17px 0;
+}
+.leftBlockDescFootnote {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+.rightBlockDesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 40px;
+    form {
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+    }
+    button {
+        width: 160px;
+        border: none;
+        height: 45px;
+        background-color: #161616;
+        color: #fff;
+        margin: 30px 0;
+        cursor: pointer;
+        &:hover {
+            background-color: #2b2b2b; 
+        }
+    }
+}
+.distribInput {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: inherit;
+    color: #000;
+    border-bottom: 1px solid #585858;
+    height: 35px;
+}
+
+@media screen and (max-width: 820px) {
+    .descBlock {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .rightBlockDesc {
+        padding-left: 10px;
+    }
+    .leftBlockDescTitle {
+        font-size: 22px;
+        margin: 15px 0;
+        span {
+            font-size: 2.3rem;
+            padding: 0 12px;
+            background-color: #df372b;
+            color: #fff;
+            border-radius: 2px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .descBlock {
+        flex-direction: column;
+    }
+    .leftBlockDesc {
+        width: 100%;
+    }
+    .rightBlockDesc {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+        form {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+        }
+        button {
+            align-self: flex-end;
+            width: 50%;
+
+            &:hover {
+                background-color: none; 
+            }
+        }
+}
+}
+
+@media screen and (max-width: 700px) {
+    .descBlock {
+        width: 100%;
+        padding: 20px 10px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .distribInput {
+        font-size: 15px;
+    }
+}

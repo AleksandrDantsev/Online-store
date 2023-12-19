@@ -1,0 +1,109 @@
+.poster {
+    display: flex;
+    margin: 150px 0;
+    height: 80vh;
+}
+.leftPoster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    h2 {
+        margin-bottom: 23px;
+    }
+    a {
+        display: inline-block;
+        padding: 15px 40px;
+        color: #fff;
+        margin-top: 20px;
+        background-color: #222222;
+        &:hover {
+            background-color: #272727;
+        } 
+    }
+    p {
+        padding: 20px 0;
+        line-height: 1.5rem;
+        font-size: 17px;
+    }
+}
+.posterLeftWrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+.rightPosterImg {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding-right: 15px;
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+    transform: translate3d(-15%, 0, 0);
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .leftPoster {
+        width: 43%;
+        margin-right: 3%;
+    }
+    .rightPosterImg {
+        width: 54%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .poster {
+        position: relative;
+        height: 100vh;
+    }
+    .leftPoster {
+        width: 100%;
+        background-color: transparent !important;
+    }
+    .rightPosterImg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+        z-index: -1;
+        img {
+            height: 100%;
+        }
+        transform: none;
+    }
+    .posterLeftWrapper {
+        background-color: #ffffffd3;
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .posterLeftWrapper {
+        width: 85%;
+    }
+    .rightPosterImg {
+        padding-right: 0;
+    }
+    .leftPoster {
+        margin-right: 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    .poster {
+        height: auto;
+    }
+    .leftPoster {
+        padding: 20px 0;
+    }
+}

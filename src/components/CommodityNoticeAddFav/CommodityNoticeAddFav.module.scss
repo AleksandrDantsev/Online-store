@@ -1,0 +1,32 @@
+.noticeFavoriteAction {
+    position: fixed;
+    display: flex;
+    z-index: 125;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    background-color: #1b7c1b;
+    color: #fff;
+    font-size: 15px;
+    top: 0;
+    height: 50px;
+    right: 0;
+    box-shadow: 0 1px 1px 0 rgb(131, 131, 131);
+    left: 0;
+    span {
+        display: block;
+        text-align: center;
+    }
+}
+.deletedFav {
+    background-color: #a01616fa;
+}
+
+.cross {
+    position: absolute;
+    right: 30px;
+    margin: 0 15px;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 5px;
+}

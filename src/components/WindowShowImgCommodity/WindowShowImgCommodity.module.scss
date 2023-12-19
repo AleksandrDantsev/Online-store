@@ -1,0 +1,85 @@
+.windowShowImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000fb;
+    z-index: 550;
+    height: 100vh;
+}
+.topLine {
+    position: relative;
+    z-index: 40;
+    background-color: #1f1f1f;
+    height: 35px;
+    width: 100%;
+    line-height: 35px;
+    color: #e7e7e7;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.img {
+    width: auto;
+    // overflow: hidden;
+    margin: 0 auto;
+    height: calc(100vh - 35px);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        cursor: zoom-in;
+    }
+}
+.mainShow {
+    display: flex;
+}
+
+.count {
+    font-size: 14px;
+}
+
+.blockLineLeftImg {
+    height: calc(100vh - 30px);
+}
+
+.closeShower {
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+
+
+.scale {
+    transition: all 400ms ease-out;
+    cursor: zoom-out !important;
+    transform: scale(2) translateY(var(--positionYVal));
+}
+
+.btNav {
+    position: fixed;
+    right: 30px;
+    top: 50px;
+    z-index: 40;
+    span {
+        display: inline-block;
+        background-color: #fff;
+        width: 50px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        font-size: 23px;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .btNav {
+        display: none;
+    }
+}

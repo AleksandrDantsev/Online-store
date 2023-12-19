@@ -1,0 +1,51 @@
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    max-height: 80vh;
+    user-select: none;
+    img {
+        width: 100%;
+        pointer-events: none;
+        min-height: 500px;
+        max-height: 80vh;
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+}
+
+
+
+.bannetText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: #ffffffcb;
+    padding: 30px;
+    font-size: 34px;
+    font-weight: 800;
+    height: 100%;
+    letter-spacing: 2px;
+    left: 50px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    p {
+        display: block;
+        margin-bottom: 15px;
+        color: #181818;
+    }
+}
+
+
+.wrapper {
+    height: min-content;
+    width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+    .bannetText {
+        padding: 13px;
+        font-size: 28px;
+    }
+}

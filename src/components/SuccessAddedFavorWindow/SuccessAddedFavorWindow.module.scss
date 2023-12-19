@@ -1,0 +1,53 @@
+.windowPopUpSuccess {
+    position: absolute;
+    z-index: 25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: #fff;
+    animation: emergeWindow linear 500ms forwards 1.5s;
+}
+.insideWindow {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    p {
+        display: inline-block;
+        font-weight: 600;
+        padding: 10px;
+        align-self: center;
+        margin: 0 auto;
+        font-size: 15px;
+        text-align: center;
+        color: #3b3b3b;
+    }
+    span {
+        text-decoration: underline;
+        font-size: 16px;
+    }
+}
+
+@keyframes emergeWindow {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .windowPopUpSuccess {
+        display: none;
+    }
+}

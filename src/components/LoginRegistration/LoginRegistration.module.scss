@@ -1,0 +1,113 @@
+.registrationWrapper {
+    width: 370px;
+    margin: 70px auto;
+}
+.registration {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.title {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.form {
+    background-color: #f1f1ef;
+    form {
+        display: flex;
+        padding: 25px;
+        flex-direction: column;
+        border: 1px solid #cacaca;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    input {
+        height: 35px;
+        padding: 0 15px;
+        font-weight: 600;
+        border: 1px solid #585858;
+    }
+    button {
+        background-color: #181818;
+        color: #fff;
+        font-size: 15px;
+        margin-top: 15px;
+        height: 40px;
+        cursor: pointer;
+        &:hover {
+            background-color: #292929;
+        }
+    }
+}
+.checkboxConteiner {
+    display: flex;
+    input {
+        margin-right: 10px;
+    }
+    label {
+        cursor: pointer;
+    }
+    padding-inline: 10px;
+}
+.checkbox {
+    position: absolute;
+    cursor: pointer;
+    align-self: center;
+    opacity: 0;
+    z-index: 15;
+    &:checked + .customCheckBox:after {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        content: '';
+        min-width: 8px;
+        min-height: 8px;
+        background-color: #000;
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+.warning {
+    margin: 15px 0;
+    font-size: 12px;
+    color: #5f5f5f;  
+}
+
+.customCheckBox {
+    position: relative;
+    align-self: center;
+    margin-right: 10px;
+    min-width: 14px;
+    min-height: 14px;
+    width: 14px;
+    height: 14px;
+    border: solid 1px gray;
+
+}
+.unSelected {
+    font-size: 13px;
+    color: #b94343;
+}
+
+@media screen and (max-width: 500px) {
+    .registrationWrapper {
+        margin: 20px auto;
+    }
+    .form {
+        form {
+            border: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .registrationWrapper{
+        width: 100%;
+    }
+}

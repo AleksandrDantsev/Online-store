@@ -1,0 +1,30 @@
+.dummy {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #e5e9e9;
+    z-index: 35;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        animation: animationLoadedCard 450ms ease infinite;
+        background-color: #e5e9e9;
+    }
+}
+
+@keyframes animationLoadedCard {
+0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+        background-color: #ececec;
+        opacity: 0.8;
+    }
+}

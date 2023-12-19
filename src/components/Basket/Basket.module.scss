@@ -1,0 +1,53 @@
+.basket {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.basketLeftProduct {
+    width: 70%;
+    margin-right: 20px;
+}
+.titleBasket {
+    h1, h2 {
+        margin-right: 25px;
+        font-size: 28px;
+    }
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding-bottom: 25px;
+}
+.count {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+    color: #f1be15;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 820px) {
+    .basket {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .basket {
+        flex-direction: column;
+    }
+    .basketLeftProduct {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .basket {
+        width: 100%;
+    }
+    .titleBasket {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,53 @@
+.outfitCard {
+    position: relative;
+    width: calc(100% / 4 - 15px);
+    height: 500px;
+    margin: 10px 10px 40px 0;
+}
+.img {
+    width: 100%;
+    height: 80%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+}
+.bottomInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 15%;
+}
+.nameCard {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.quantityProd {
+    display: flex;
+    p {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .outfitCard {
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .outfitCard {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .outfitCard {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}

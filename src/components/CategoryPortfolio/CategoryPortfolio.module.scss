@@ -1,0 +1,33 @@
+.categoryPortfolio {
+    width: 100%;
+    min-height: 600px;
+    margin: 100px auto;
+}
+.catTitle {
+    margin: 20px 0 35px 0;
+    h2 {
+        font-size: 30px;
+    }
+}
+.catList {
+    display: flex;
+}
+
+@media screen and (max-width: 570px) {
+    .catList {
+
+        flex-direction: column;
+    }
+    .catTitle {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .catTitle {
+        h2, h3, h4 {
+            text-align: center;
+        }
+    }
+}

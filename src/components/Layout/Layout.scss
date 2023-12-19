@@ -1,0 +1,16 @@
+.animationLoad {
+    animation: animationLoad 1s ease forwards;
+}
+
+@keyframes animationLoad{
+    0% {
+        opacity: 0;
+        transform: translate3d(-300px, 0, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+        background-color: unset;
+    }
+}

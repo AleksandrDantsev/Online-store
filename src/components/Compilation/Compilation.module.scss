@@ -1,0 +1,84 @@
+.outFit {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.image {
+    width: 50%;
+    min-width: 400px;
+    margin-right: 2%;
+    text-align: center;
+    img {
+        position: sticky;
+        top: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+}
+.outfitCompilationCards {
+    max-height: 100%;
+    width: 45%;
+    margin: 0 2% 0 3%;
+}
+.titleoutfitCompilation {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.outfitCompilationCardsConteiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.notFound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-size: 20px;
+    color:rgb(202, 38, 38);
+}
+.mainPageLink {
+    color: #7e7e7e;
+    text-decoration: underline;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 850px) {
+    .image {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        img {
+            opacity: 0.8;
+            object-fit: cover;
+        }
+    }
+    .outfitCompilationCards {
+        width: 100%;
+    }
+    .outfitCompilationCardsConteiner {
+        margin: 0 auto;
+        height: 80%;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .outfitCompilationCards {
+        padding: 30px 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .outfitCompilationCardsConteiner {
+        width: 100%;
+    }
+}

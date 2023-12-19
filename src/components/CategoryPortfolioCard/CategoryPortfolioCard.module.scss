@@ -1,0 +1,74 @@
+.categoryPortfolioCard {
+    width: 45%;
+    height: 100%;
+}
+.cardImg {
+    width: 100%;
+    height: 70%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+}
+.bottom {
+    max-height: 30%;
+    width: 100%;
+}
+.title {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+}
+.content {
+    text-align: center;
+    padding: 20px 10px;
+    min-height: 100px;
+}
+.link {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    a {
+        display: inline-block;
+        padding: 15px 40px;
+        color: #fff;
+        background-color: #222222;
+        &:hover {
+            background-color: #272727;
+        } 
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        min-height: 120px;
+    }
+    .premiumCard {
+        width: 48%;
+        gap: 2%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .categoryPortfolioCard {
+        width: 80%;
+        margin: 40px auto;
+        height: auto;
+    }
+    .premiumCard {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .categoryPortfolioCard {
+        width: 100%;
+    }
+    .bottom {
+        padding: 0 10px;
+    }
+
+}

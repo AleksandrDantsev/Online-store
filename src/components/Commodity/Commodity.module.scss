@@ -1,0 +1,102 @@
+.sliderBt {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    width: 60px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 38px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 4px 1px #adadad6c;
+}
+.sliderRight {
+    right: 5px;
+    transform: rotate(180deg);
+}
+.sliderLeft {
+    left: 5px;
+}
+
+.color { 
+    min-height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: solid 3px rgb(221, 220, 220);
+}
+.colors {
+    display: flex;
+    div {
+        margin-right: 15px;
+    }
+}
+
+.commodityBlock {
+    display: flex;
+    width: 90%;
+    min-height: 90vh;
+    margin: 0 auto 100px auto;
+}
+.leftColumn {
+    display: flex;
+    position: sticky;
+    height: max-content;
+    overflow-y: hidden;
+    top: 10px;
+    width: 70%;
+    max-height: 70vh;
+    img {
+        cursor: pointer;
+    }
+}
+
+
+.sliderImg {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+.sliderPhotosWindow {
+    display: flex;
+    height: 99.4%;
+    margin: 0 30px;
+    img {
+        width: 48%;
+        margin-right: 2%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 0;
+        cursor: zoom-in;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .commodityBlock {
+        width: 95%;
+        flex-direction: column;
+    }
+    .leftColumn {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #oneImgSlider {
+        display: none;
+    }
+    .sliderPhotosWindow {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sliderPhotosWindow{
+        margin: 0 10px;
+    }
+}

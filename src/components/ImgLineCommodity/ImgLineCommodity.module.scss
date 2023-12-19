@@ -1,0 +1,33 @@
+.imgLine {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    overflow-y: auto;
+    max-height: 100vh;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 0;
+        cursor: pointer;
+    }
+}
+
+
+.imgLine::-webkit-scrollbar {
+    display: none;
+}
+.imgLine {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+.hiddenImgLine {
+    height: 70vh;
+}
+
+@media screen and (max-width: 400px) {
+    .imgLine{
+        display: none;
+    }
+}

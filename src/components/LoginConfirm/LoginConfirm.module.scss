@@ -1,0 +1,89 @@
+.confirmBlockConteiner {
+    width: 350px;
+    margin: 70px auto;
+}
+.confirmTitle {
+        margin-bottom: 15px;
+        font-size: 18px;
+}
+.formLogin {
+    label {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        flex-direction: column;
+        border: 1px solid #cacaca;
+        min-height: 380px;
+    }
+    input {
+        height: 35px;
+        padding: 0 15px;
+        font-weight: 600;
+        border: 1px solid #585858;
+    }
+    button {
+        background-color: #181818;
+        color: #fff;
+        font-size: 15px;
+        margin-top: 15px;
+        height: 40px;
+        cursor: pointer;
+        &:hover {
+            background-color: #292929;
+        }
+    }
+    
+}
+
+.forgetPassword {
+    text-align: end;
+    font-size: 14px;
+    color: #535353;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.haveNotAccount {
+    margin: 10px 0;
+    text-align: end;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #4b4b4b;
+    text-decoration: underline;
+}
+.notFilled {
+    border-color: #a01313 !important;
+}
+
+.notFilledText {
+    font-size: 13px;
+    color: #b91010;
+    p {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .confirmTitle {
+        text-align: center;
+    }
+    .formLogin {
+        form {
+            border: 0;
+            min-height: auto;
+        }
+    }
+    .confirmBlockConteiner {
+        width: 100%;
+    }
+}

@@ -1,0 +1,75 @@
+.favoriteConteiner {
+    width: 90%;
+    margin: 40px auto;
+}
+.titleBlock {
+    margin: 30px 0;
+}
+.title {
+    display: flex;
+    margin-right: 50px;
+    justify-content: space-between;
+    h1, h2 {
+        margin-right: 50px;
+    }
+}
+.titleCounter {
+    display: flex;
+    align-self: center;
+}
+.countProd {
+    display: flex;
+    color: #919191;
+    font-size: 14px;
+    p {
+        align-self: center;
+        text-align: center;
+        display: inline-block;
+    }
+}
+.conteinterProducts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.emptyFavoriteWindow {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    span {
+        display: inline-block;
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        align-self: center;
+        color: #2e2e2e;
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .countProd {
+        margin-right: 15px;
+        margin-top: 10px;
+        p {
+            white-space: nowrap;
+        }
+    }
+    .titleCounter {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title {
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .titleCounter {
+        align-self: unset;
+    }
+}

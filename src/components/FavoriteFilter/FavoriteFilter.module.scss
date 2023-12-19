@@ -1,0 +1,47 @@
+.favFilter {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.titleFilter {
+    display: inline-block;
+    min-width: 200px;
+
+    border-bottom: solid 2px #353535;
+    padding-bottom: 10px;
+}
+.dropListFilter {
+    display: flex;
+    background-color: #fff;
+    width: 200px;
+    z-index: 30;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    flex-direction: column;
+    span {
+        padding: 15px 0 15px 10px;
+        cursor: pointer;
+        border: solid 1px rgb(230, 229, 229);
+        margin: 1px 0;
+        font-size: 14px;
+    }
+}
+
+.active {
+    background-color: #dadada;
+}
+// className={!props.position ? st.card : st.card + ' ' + st +`${additionalyClassNameCard[props.position]}`
+.textFilter {
+    color: #8b8b8b;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 870px) {
+    .titleFilter {
+        font-size: 14px;
+        border-bottom: solid 1px #353535;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,53 @@
+.aniamtionLoad {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.animEffect {
+    position: fixed;
+    display: flex;
+    margin-left: 12px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.title {
+    position: relative;
+    font-size: 42px;
+    letter-spacing: 25px;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    text-shadow: 0 1px 3px rgba(128, 128, 128, 0.329);
+}
+.circle {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    min-width: 100%;
+    opacity: 0.9;
+    background-color: #ffffff;
+    box-shadow: -15px 0 19px 2px #ffffff;
+    animation: animationLoad 3s ease infinite;
+}
+
+
+@keyframes animationLoad {
+    0% {
+        min-width: 100%;
+    }
+    100% {
+        min-width: 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 35px;
+        letter-spacing: 20px;
+    }
+}

@@ -1,0 +1,176 @@
+.filter {
+    border-bottom: 1px solid #cecece;
+    height: 40px;
+    margin-bottom: 25px;
+    form {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+}
+.costRange {
+    position: relative;
+    width: 40%;
+    min-width: 220px;
+}
+.inputs {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.inputsCost {
+    width: 100%;
+    padding: 20px;
+    input {
+        box-shadow: 0 0 3px 1px rgba(212, 212, 212, 0.685);
+        height: 35px;
+        padding: 0 15px;
+        font-size: 15px;
+        width: 45%;
+        color: #464545;
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+    input[type='number'],
+    input[type="number"]:hover,
+    input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+}
+.dash {
+    margin: 0 10px;
+}
+.colors {
+    padding: 15px;
+    padding-top: 0;
+}
+
+.colorsTitle, .titleCost, .sortTitle{
+    cursor: pointer;
+    display: block;
+    white-space: nowrap;
+    padding: 10px;
+    padding-left: 0;
+    font-size: 15px;
+    color: #272727;
+    user-select: none;
+}
+
+
+
+.dropColor, .dropSortCost, .inputsCost {
+    position: absolute;
+    display: none;
+    z-index: 40;
+    background-color: #fff;
+    padding: 17px;
+    color: #303030;
+    box-shadow: 0 8px 19px 0 rgba(94, 93, 93, 0.349);
+}
+.activeDrop {
+    display: block;
+}
+.checkboxColor {
+    position: relative;
+    padding: 5px;
+    label {
+        cursor: pointer;
+        font-size: 14px;
+    }
+    input {
+        position: relative;
+        z-index: 15;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 7px;
+        opacity: 0;
+        top: 2px;
+        cursor: pointer;
+        &:checked + .checkBoxCustom:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            background-color: #181313;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    }
+}
+
+.checkBoxCustom {
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    outline: solid 1px gray;
+    cursor: pointer;
+}
+.btAccept {
+    position: absolute;
+    transform: translateY(-120%);
+    right: -13px;
+    padding: 8px 25px;
+    font-size: 14px;
+    background-color: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        color: #2e2e2e;
+        background-color: #fff;
+        outline: solid 1px #2e2e2e;
+    }
+}
+.sortCost {
+    position: relative;
+    white-space: nowrap;
+    span {
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+.costTitle {
+    font-size: 13px;
+    color: #333333;
+    padding: 10px 0 5px 1px;
+}
+.pickVarSortColor {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.sortTitle {
+    user-select: none;
+}
+.dropSortCost {
+    span {
+        display: block;
+        padding: 5px 2px;
+    }
+    width: 200px;
+    background-color: #fff;
+    padding: 16px;
+}
+
+@media screen and (max-width: 550px) {
+    .filter {
+        height: auto;
+        form {
+            flex-direction: column;
+        }
+    }
+    .colors {
+        padding: 0;
+    }
+    .colorsTitle, .titleCost, .sortTitle{ 
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,57 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vmax;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    ul {
+        display: flex;
+        width: auto;
+        height: 100%;
+    }
+    li {
+        font-size: 16px;
+        border: 1px solid gray;
+        min-width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 5px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 2px 0px rgba(150, 150, 150, 0.521);
+        }
+    }
+}
+
+.active {
+    background-color: #ffffff;
+    outline: 2px solid #222222 !important;
+}
+
+.listNotFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: #3a3a3a;
+}
+
+@media screen and (max-width: 1330px) {
+    .cards {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cards {
+        justify-content: center;
+    }
+}

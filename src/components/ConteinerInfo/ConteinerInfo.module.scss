@@ -1,0 +1,16 @@
+.conteinerInfo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 820px) {
+    .conteinerInfo {
+        h2, h3 {
+            font-size: 22px;
+        }
+        p, li {
+            font-size: 16px;
+        }
+    }
+}
